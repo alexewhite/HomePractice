@@ -44,24 +44,32 @@ struct ContentView: View {
                             .cornerRadius(10)
                     }
                 } // end of VStack
-                VStack (spacing: 100.0){
-                    HStack (spacing: 100){
+                VStack (spacing: 50.0){
+                    HStack (spacing: 50){
                         VStack{
-                            Text("Image 1")
+                            Image("Black")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
                             Text("Text 1")
                         } // end of VStack
                         VStack{
-                            Text("Image 2")
+                            Image("Black")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
                             Text("Text 2")
                         } // end of VStack
                     } // end of HStack
-                    HStack (spacing: 100){
+                    HStack (spacing: 50){
                         VStack{
-                            Text("Image 3")
+                            Image("Black")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
                             Text("Text 3")
                         } // end of VStack
                         VStack{
-                            Text("Image 4")
+                            Image("Black")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
                             Text("Text 4")
                         } // end of VStack
                     } // end of HStack
