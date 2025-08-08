@@ -44,6 +44,28 @@ struct ContentView: View {
                             .cornerRadius(10)
                     }
                 } // end of VStack
+                VStack (spacing: 100.0){
+                    HStack (spacing: 100){
+                        VStack{
+                            Text("Image 1")
+                            Text("Text 1")
+                        } // end of VStack
+                        VStack{
+                            Text("Image 2")
+                            Text("Text 2")
+                        } // end of VStack
+                    } // end of HStack
+                    HStack (spacing: 100){
+                        VStack{
+                            Text("Image 3")
+                            Text("Text 3")
+                        } // end of VStack
+                        VStack{
+                            Text("Image 4")
+                            Text("Text 4")
+                        } // end of VStack
+                    } // end of HStack
+                } // end of VStack
             } // end of ZStack
             .ignoresSafeArea(edges: .all)
 
