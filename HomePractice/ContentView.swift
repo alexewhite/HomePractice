@@ -35,45 +35,58 @@ struct ContentView: View {
                         .foregroundColor(Color.white)
                         .padding(12.0)
                     Spacer()
-                    NavigationLink(destination: SecondView()) {
-                        Text("Go to second view")
-                            .font(.headline)
-                            .padding()
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                    }
+                    
                 } // end of VStack
-                VStack (spacing: 50.0){
-                    HStack (spacing: 50){
-                        VStack{
-                            Image("Black")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            Text("Text 1")
-                        } // end of VStack
-                        VStack{
-                            Image("Black")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            Text("Text 2")
-                        } // end of VStack
-                    } // end of HStack
-                    HStack (spacing: 50){
-                        VStack{
-                            Image("Black")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            Text("Text 3")
-                        } // end of VStack
-                        VStack{
-                            Image("Black")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            Text("Text 4")
-                        } // end of VStack
-                    } // end of HStack
-                } // end of VStack
+                NavigationStack {
+                    VStack (spacing: 20.0){
+                        HStack (spacing: 20){
+                            VStack{
+                                Image("Screenshot 2025-08-08 at 8.43.03 PM")
+                                    
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .clipShape(RoundedRectangle(cornerRadius: 25))
+                                    .padding(20.0)
+                                NavigationLink(destination: Reagan()) {
+                                    Text("Reagan")
+                                }
+                            } // end of VStack
+                            VStack{
+                                Image("Screenshot 2025-08-08 at 8.43.52 PM")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .clipShape(RoundedRectangle(cornerRadius: 25))
+                                    .padding(20.0)
+                                NavigationLink(destination: Alex()) {
+                                    Text("Alex")
+                                }
+                            } // end of VStack
+                        } // end of HStack
+                        HStack (spacing: 20){
+                            VStack{
+                                Image("Screenshot 2025-08-08 at 8.44.14 PM")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .clipShape(RoundedRectangle(cornerRadius: 25))
+                                    .padding(20.0)
+                                NavigationLink(destination: Benjamin()) {
+                                    Text("Benjamin")
+                                }
+                            } // end of VStack
+                            VStack{
+                                Image("Screenshot 2025-08-08 at 8.46.06 PM")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .clipShape(RoundedRectangle(cornerRadius: 25))
+                                    .padding(20.0)
+                                NavigationLink(destination: Alanna()) {
+                                    Text("Alanna")
+                                }
+                            } // end of VStack
+                        } // end of HStack
+                    } // end of VStack
+                } // end of NavigationStack
+                
             } // end of ZStack
             .ignoresSafeArea(edges: .all)
 
